@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <fieldset>
+    <legend>Age:</legend>
+    <label><input type="radio" name="age" value="<18"> &lt; 18</label>
+    <label><input type="radio" name="age" value="19-35"> 19-35</label>
+    <label><input type="radio" name="age" value="36-48"> 36-48</label>
+    <label><input type="radio" name="age" value=">49"> &gt; 49</label>
+    </fieldset>
+
+    <label for="Profession">Profession:</label> 
+    <input type="text" id="Profession">,<br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+    <option value="Thailand">Thailand</option>
+    </select><br>
+
+    <fieldset>
+        <legend>Interests:</legend>
+        <label><input type="radio" name="Photography" >Photography ; 18</label>
+        <label><input type="radio" name="Music" > Music</label>
+        <label><input type="radio" name="Cinema" > Cinema</label>
+        <label><input type="radio" name="•Computers" >Computers</label>
+    </fieldset>
+
+    <label for="source">How did you find out about the site:</label>
+        <textarea id="source" name="source" rows="4" cols="50" required></textarea>
+        <br><br>
+    <input type="submit" value="Submit">
+/body>
+/html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info with Stroke Text</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="300"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Set font properties
+        ctx.font = '30px sans-serif';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
+
+        // Set stroke color and line width
+        ctx.strokeStyle = 'navy';
+        ctx.lineWidth = 1;
+
+        // Student details
+        const name = 'Rattanin';
+        const surname = 'Kliangmol';
+        const nickname = 'Athens';
+
+        // Draw text with stroke
+        ctx.strokeText(`Name: ${name}`, canvas.width / 2, 100);
+        ctx.strokeText(`Surname: ${surname}`, canvas.width / 2, 150);
+        ctx.strokeText(`Nickname: ${nickname}`, canvas.width / 2, 200);
+    </script>
+</body>
+</html>

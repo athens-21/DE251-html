@@ -1,0 +1,19 @@
+#tagline { 
+    text-align: center;
+}
+
+#submit {
+    background-color: green; /* เปลี่ยนสีพื้นหลังเป็นสีเขียว */
+    color: white; /* เปลี่ยนสีตัวอักษรเป็นสีขาว */
+    border: none; /* ลบเส้นขอบ */
+}
+
+#submit:hover {
+    background-color: darkgreen; 
+}
+
+#View {
+    background-color:white;
+    color: #000;
+    border-color: #000;
+}

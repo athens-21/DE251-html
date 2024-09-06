@@ -1,0 +1,16 @@
+body {
+    background-color: #000000;
+}
+
+h1 {
+    text-align: center;
+    color: #2acf01;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20 px;
+}
+
+p {
+    text-align: center;
+    color: #2acf01;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
