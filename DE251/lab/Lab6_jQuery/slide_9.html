@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button#bt1").click(function(){
+                $("p").hide();
+            });
+            $("button#bt2").click(function(){
+                $("ul li:first-child").hide();
+            });
+            $("h1").click(function(){
+                $(this).fadeOut(500);
+            });
+            $("p#lastpara").hover(
+                function(){ alert("IN"); },
+                function(){ alert("OUT"); }
+            );
+            $("p#firstp").click(function(){
+                $(this).css("color", "green").slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>jQuery Example</h1>
+
+    <p id="firstp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quasi doloribus, repellat rerum quae eius et asperiores nam ipsum, odit, eum in. Deserunt harum ullam quibusdam quo, quod officia! Assumenda.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem ea quae soluta quis libero dolorum pariatur odio molestias, tempore maiores nihil molestiae aliquid perferendis cum debitis. Accusamus, error iste!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem ea quae soluta quis libero dolorum pariatur odio molestias, tempore maiores nihil molestiae aliquid perferendis cum debitis. Accusamus, error iste!</p>
+    <p id="lastpara">Hover Hover Hover</p>
+    
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+
+    <ul>
+        <li>Apple</li>
+        <li>Samsung</li>
+        <li>Oppo</li>
+    </ul>
+
+    <button id="bt1">Hide all the paragraphs</button>
+    <button id="bt2">Hide Apple</button>
+</body>
+</html>
