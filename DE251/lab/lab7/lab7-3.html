@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7-3: jQuery load() Method</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h2>Practice: jQuery load() Method</h2>
+
+<button id="loadBtn">Show text</button>
+
+<div id="contentArea"></div>
+
+<script>
+$(document).ready(function(){
+    $("#loadBtn").click(function(){
+        $("#contentArea").load("content.html #mytext", function(response, status, xhr) {
+            if (status == "error") {
+                $("#contentArea").html("Error loading content: " + xhr.status + " " + xhr.statusText);
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
