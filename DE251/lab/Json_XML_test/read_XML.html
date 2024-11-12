@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const parser = new DOMParser();
+        const xmlString = `<bookstore><book><title>Learning JavaScript</title></book></bookstore>`;
+        const xmlString1 = `<bookstore><book><title>Rattanin Kliangmol</title></book></bookstore>`;
+        const xmlDoc = parser.parseFromString(xmlString, "application/xml");
+        const xmlDoc1 = parser.parseFromString(xmlString1, "application/xml");
+        console.log(xmlDoc.getElementsByTagName("title")[0].textContent);
+        console.log(xmlDoc1.getElementsByTagName("title")[0].textContent);
+        document.write(xmlDoc.getElementsByTagName("title")[0]. textContent)
+        document.write(xmlDoc1.getElementsByTagName("title")[0]. textContent)
+    </script>
+</head>
+<body>
+            
+</body>
+</html>
